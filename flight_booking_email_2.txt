@@ -1,10 +1,10 @@
-Hello Alice Smith,
+Hello Enrique Zheng,
 
 Your booking was successful! 
 
-The booking is for flight LA123 with departure date of 2026-12-01T10:00:00.000+00:00 and arrival date of 2026-12-01T14:00:00.000+00:00.
+The booking is for flight LA101 with departure date of 2026-06-27T16:58:07.164.000+00:00 and arrival date of 2026-06-27T21:58:07.164.000+00:00.
 
-The booking was registered at 2026-06-22T14:50:14.389+00:00.
+The booking was registered at 2026-06-25T17:07:36.158+00:00.
 
 Bon Voyage!
 Fly Away Travel

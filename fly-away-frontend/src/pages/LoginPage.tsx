@@ -2,6 +2,7 @@ import { useState, type FormEvent } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import api, { errorMessage } from '../api';
 import { useAuth } from '../auth/AuthContext';
+import { SEED_NAMES } from '../auth/seedNames';
 import type { AuthTokenResponse } from '../types';
 
 interface LocationState {
@@ -34,7 +35,12 @@ export default function LoginPage() {
         email: email.trim(),
         password,
       });
-      await login(res.data.token);
+      // Resolvemos el nombre a mostrar: primero el que se guardó al
+      // registrarse, luego los usuarios sembrados, y por último la parte
+      // local del email como respaldo.
+      const key = email.trim();
+      const name = localStorage.getItem(`name:${key}`) || SEED_NAMES[key] || key.split('@')[0];
+      await login(res.data.token, name);
       navigate(from, { replace: true });
     } catch (err) {
       setError(errorMessage(err, 'Credenciales incorrectas.'));

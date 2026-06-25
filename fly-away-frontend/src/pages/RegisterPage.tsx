@@ -32,6 +32,9 @@ export default function RegisterPage() {
         lastName: lastName.trim(),
         password,
       });
+      // El backend no devuelve el nombre en /users/current, así que guardamos
+      // el que ingresó el usuario para recuperarlo luego al iniciar sesión.
+      localStorage.setItem(`name:${email.trim()}`, firstName.trim());
       setSuccess('¡Cuenta creada! Redirigiendo al inicio de sesión...');
       setTimeout(() => navigate('/login'), 1200);
     } catch (err) {

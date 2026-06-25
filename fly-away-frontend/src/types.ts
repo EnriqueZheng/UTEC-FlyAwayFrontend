@@ -1,3 +1,5 @@
+// El backend en GET /users/current devuelve UserNoPasswordDTO,
+// que solo expone id, username y role (sin firstName/lastName/email).
 export interface CurrentUser {
   id: number;
   username: string;

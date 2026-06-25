@@ -2,7 +2,8 @@ import { NavLink, useNavigate } from 'react-router-dom';
 import { useAuth } from '../auth/AuthContext';
 
 export default function Navbar() {
-  const { isAuthenticated, user, logout } = useAuth();
+  // @ts-ignore
+    const { isAuthenticated, user, displayName, logout } = useAuth();
   const navigate = useNavigate();
 
   function handleLogout() {
@@ -23,7 +24,7 @@ export default function Navbar() {
         {isAuthenticated && (
           <>
             <span className="navbar-user">
-              Hola, {user ? user.username : '...'}
+              Hola, {displayName || user?.username || '...'}
             </span>
             <button className="link-button" onClick={handleLogout}>
               Cerrar sesión

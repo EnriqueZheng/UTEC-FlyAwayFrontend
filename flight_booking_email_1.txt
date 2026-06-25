@@ -1,10 +1,10 @@
-Hello Pepe Nieva,
+Hello Ana Garcia,
 
 Your booking was successful! 
 
-The booking is for flight LA101 with departure date of 2026-06-27T06:47:02.468.000+00:00 and arrival date of 2026-06-27T11:47:02.468.000+00:00.
+The booking is for flight LA101 with departure date of 2026-06-27T16:58:07.164.000+00:00 and arrival date of 2026-06-27T21:58:07.164.000+00:00.
 
-The booking was registered at 2026-06-25T06:49:05.019+00:00.
+The booking was registered at 2026-06-25T17:03:40.569+00:00.
 
 Bon Voyage!
 Fly Away Travel
